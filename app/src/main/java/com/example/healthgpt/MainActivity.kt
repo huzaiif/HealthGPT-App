@@ -4,8 +4,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import com.example.healthgpt.adapter.ChatAdapter
 import com.example.healthgpt.model.Message
 import com.example.healthgpt.network.*
@@ -16,7 +16,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 class MainActivity : AppCompatActivity() {
 
     private lateinit var messageBox: EditText
-    private lateinit var sendBtn: Button
+    private lateinit var sendBtn: ImageButton
     private lateinit var chatRecycler: RecyclerView
     private lateinit var adapter: ChatAdapter
     private val messages = ArrayList<Message>()
